@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Form validation: Task 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/095ca07a8a.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+    <form id="form">
+      <h2>Enter your support query</h2>
+      <ul>
+        <li  >
+          <label for="uname">User name:</label>
+          <input type="text" name="uname" id="uname">
+          <i class="far fa-check-circle fa-green"></i>
+          <i class="fas fa-exclamation-triangle fa-red"></i> <br>
+          <small  class="small1">Error message</small>
+        </li>
+        <li >
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email">
+          <i class="far fa-check-circle fa-green"></i>
+          <i class="fas fa-exclamation-triangle fa-red"></i> <br>
+          <small class="small2">Error message</small>
+        </li>
+        <li >
+          <label for="phone">Phone number:</label>
+          <input type="number" name="phone" id="phone">
+          <i class="far fa-check-circle fa-green"></i>
+          <i class="fas fa-exclamation-triangle fa-red"></i> <br>
+          <small class="small3">Error message</small>
+        </li>
+        <li class="last">
+          <label for="comment" class="comment">Comment:</label>
+          <textarea name="comment" id="comment">
+          </textarea>
+          <i class="far fa-check-circle fa-green"></i>
+          <i class="fas fa-exclamation-triangle fa-red"></i> <br>
+          <small class="small4">Error message</small>
+        </li>
+        <li>
+          <button id="btn">Submit comment</button>
+        </li>
+      </ul>
+    </form>
+   </div>
+   <script src="script.js"></script>
+  </body>
+
+</html>
