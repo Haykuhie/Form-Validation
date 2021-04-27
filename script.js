@@ -49,7 +49,7 @@ if(phone.value.trim()==''){
     form.querySelector('.small3').innerText='Phone number is a mandatory field'
 }else if(phone.value.trim().length>15){
     //showing error by error text and error icon
-    userName.parentElement.className='error'    
+    phone.parentElement.className='error'    
     form.querySelector('.small3').innerText='Phone number can not have more than 15 digits'
     //valid phone number
 }else {
@@ -61,10 +61,11 @@ if(comment.value.trim()==''){
     //add error class
     comment.parentElement.className='error'
     form.querySelector('.small4').innerText='You should write something'
-}else if(comment.value.trim().length>200){
+}else if(comment.value.trim().length>200){    
     //showing error by error text and error icon
-    comment.parentElement.className='error'    
+      
     form.querySelector('.small4').innerText='You can write maximum of 200 characters'
+    comment.parentElement.className='error'  
     //valid phone number
 }else{
     comment.parentElement.className='success'

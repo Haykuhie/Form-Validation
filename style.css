@@ -72,9 +72,14 @@ height:70px;
      top:50px;
      visibility:hidden;
  }
+
  .last small{
  
-    top:70px;
+    top:100px;
+}
+.small4 {
+    position:absolute; 
+    top:95px !important;
 }
  .fa-green{
   color:green;
